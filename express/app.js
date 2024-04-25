@@ -37,7 +37,7 @@ app.put('/update-todo', async function (req, res) {
     try {
         const body = req.body
         const id = body._id;
-        
+
         const response = await TodoModel.updateOne({ _id: id }, body);
 
         if (response.nModified > 0) {
@@ -67,6 +67,17 @@ app.get('/todo/:id', async function (req, res) {
         const id = req.params.id
         const response = await TodoModel.findOne({_id:id});
         res.json(response);
+    } catch (error) {
+        res.status(500).json(error);
+        console.log(error);
+    }
+});
+
+app.delete('/delete-todo/:id', async function (req, res) {
+    try {
+        const id = req.params.id
+        const response = await TodoModel.findOneAndDelete({_id:id});
+        res.send(response);
     } catch (error) {
         res.status(500).json(error);
         console.log(error);
