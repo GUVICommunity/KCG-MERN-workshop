@@ -48,11 +48,14 @@ npm init <project name>
 
 
 ## Create React.js project using vite:
-`npx create-react-app <project name>`
+`npm create vite <project name> -- --template react`
 
 
 # References:
 
+### vite: https://vitejs.dev/
+### express: https://expressjs.com/en/starter/hello-world.html
+### mongoose: https://mongoosejs.com/docs/index.html
 ### CORS (Cross-Origin Resource Sharing): https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 ### Guide to install mongodb server
 - windows: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/
