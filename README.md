@@ -1,3 +1,5 @@
+# KCG-MERN workshop
+
 ## Nodejs download link:
 
 https://nodejs.org/en/download
@@ -51,10 +53,11 @@ https://code.visualstudio.com/download
 
 # References:
 
+### Fetch api: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+### CORS (Cross-Origin Resource Sharing): https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 ### vite: https://vitejs.dev/
 ### express: https://expressjs.com/en/starter/hello-world.html
 ### mongoose: https://mongoosejs.com/docs/index.html
-### CORS (Cross-Origin Resource Sharing): https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 ### Guides to install mongodb server:
 - windows: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/
 - linux: https://www.mongodb.com/docs/manual/administration/install-on-linux/
