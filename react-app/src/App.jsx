@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoItem from './TodoItem';
 
 const headers = {
     'Content-Type': 'application/json',
@@ -85,30 +86,12 @@ function App() {
             {todos?.length > 0 ? (
                 <ul className='todo-list'>
                     {todos?.map((todo) => (
-                        <li
-                            style={{
-                                textDecoration: todo?.completed
-                                    ? 'line-through'
-                                    : '',
-                            }}
-                            className='todo-item'
-                            key={todo?._id}>
-                            {todo?.todo}
-                            <button
-                                className='action-btn'
-                                onClick={() => {
-                                    completeTodo(todo?._id, !todo?.completed);
-                                }}>
-                                complete
-                            </button>
-                            <button
-                                className='action-btn'
-                                onClick={() => {
-                                    deleteTodo(todo._id);
-                                }}>
-                                delete
-                            </button>
-                        </li>
+                        <TodoItem
+                            todo={todo}
+                            key={todo._id}
+                            deleteTodo={deleteTodo}
+                            completeTodo={completeTodo}
+                        />
                     ))}
                 </ul>
             ) : (
