@@ -62,3 +62,8 @@ https://code.visualstudio.com/download
 - windows: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/
 - linux: https://www.mongodb.com/docs/manual/administration/install-on-linux/
 - macos: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
+
+## Video Guides
+- Node.js installation: https://www.youtube.com/watch?v=igJAD0J5Cts
+- Mongodb server installation: https://www.youtube.com/watch?v=wcx3f0eUiAw
+- Mongodb compass installation: https://www.youtube.com/watch?v=ytm9Iwe4Um0
